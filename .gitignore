@@ -11,7 +11,7 @@ wheels/
 # Virtual environment
 env/
 venv/
-notebook/test
+
 
 # IDE/editor settings
 .vscode/
