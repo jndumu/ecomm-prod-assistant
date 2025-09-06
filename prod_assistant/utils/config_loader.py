@@ -7,6 +7,7 @@ def _project_root() -> Path:
     # .../utils/config_loader.py -> parents[1] == project root
     return Path(__file__).resolve().parents[1]
 
+
 def load_config(config_path: str | None = None) -> dict:
     """
     Resolve config path reliably irrespective of CWD.
