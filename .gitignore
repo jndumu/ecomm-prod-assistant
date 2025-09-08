@@ -12,7 +12,6 @@ wheels/
 env/
 venv/
 
-
 # IDE/editor settings
 .vscode/
 .idea/
