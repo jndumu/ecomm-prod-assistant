@@ -53,6 +53,7 @@ class Retriever:
                 namespace=self.db_keyspace,
                 )
         if not self.retriever:
+            
             top_k = self.config["retriever"]["top_k"] if "retriever" in self.config else 3
             retriever=self.vstore.as_retriever(search_kwargs={"k": top_k})
             print("Retriever loaded successfully.")
