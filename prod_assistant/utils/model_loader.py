@@ -122,9 +122,9 @@ class ModelLoader:
         
         #elif provider == "groq":
         #    return ChatGroq(
-         
-        #       model=model_name,
-        #       api_key=self.api_key_mgr.get("GROQ_API_KEY"), #type: ignore
+
+        #    model=model_name,
+        #    api_key=self.api_key_mgr.get("GROQ_API_KEY"), #type: ignore
         #        temperature=temperature,
         #    )
             
