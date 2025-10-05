@@ -12,7 +12,7 @@ import asyncio
 
 
 class ApiKeyManager:
-    REQUIRED_KEYS = ["GOOGLE_API_KEY", "OPENAI_API_KEY"]
+    REQUIRED_KEYS = ["GROQ_API_KEY", "GOOGLE_API_KEY", "OPENAI_API_KEY"]
 
     def __init__(self):
         self.api_keys = {}
@@ -120,13 +120,13 @@ class ModelLoader:
                 max_output_tokens=max_tokens
             )
         
-        #elif provider == "groq":
-        #    return ChatGroq(
+        elif provider == "groq":
+            return ChatGroq(
 
-        #    model=model_name,
-        #    api_key=self.api_key_mgr.get("GROQ_API_KEY"), #type: ignore
-        #        temperature=temperature,
-        #    )
+            model=model_name,
+            api_key=self.api_key_mgr.get("GROQ_API_KEY"), #type: ignore
+                temperature=temperature,
+            )
             
             #elif provider == "OPENAI_API_KEY":"            
 
