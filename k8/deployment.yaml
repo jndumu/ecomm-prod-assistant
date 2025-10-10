@@ -29,7 +29,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: product-assistant-secrets
-              key: GROQ_API_KEY              
+              key: GROQ_API_KEY      
         - name: GOOGLE_API_KEY
           valueFrom:
             secretKeyRef:
